@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cart-icon">
+        <a href="panier.html"><img src="panier.png" alt="Panier" style="width: 50px; height: 50px;"></a>
+        <span class="cart-counter" id="cart-counter">0</span>
+    </div>
+
+    <div class="container">
+        <div class="product-box">
+            <div class="image-placeholder">image</div>
+            <div class="product-details">
+                <div>
+                    <div class="product-title">Graine de kedhe</div>
+                    <div class="product-ref">ref : #657753218995455</div>
+                    <div class="product-price">Prix : 43 dt/kilo</div>
+                </div>
+                <div class="quantity-selector">
+                    <button onclick="decreaseQuantity()">-</button>
+                    <input type="text" id="quantity" value="1" readonly>
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+                <button class="buy-button" 
+                        onmousedown="changeButtonColorOnPress()" 
+                        onmouseup="revertButtonColorOnRelease()" 
+                        onclick="addToCart()">
+                    Acheter
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

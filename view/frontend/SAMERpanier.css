@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.cart-container {
+    width: 80%;
+    max-width: 900px;
+    border: 1px solid #333;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cart-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-details {
+    width: 60%;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.product-quantity {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.product-quantity button {
+    background-color: #a6f4a6;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.product-quantity input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #333;
+    margin: 0 5px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.billing {
+    width: 35%;
+    border: 1px solid #333;
+    padding: 15px;
+}
+
+.billing-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.billing-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #a6f4a6;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
